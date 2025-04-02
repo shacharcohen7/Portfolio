@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shachar Cohen</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="images/favicon.ico">
+    </head>
+    <body>
+        <header> 
+            <p id="my_name" class="header-content">
+                <img src="images/favicon.ico" style="height: 30px; width: 30px;">
+                Shachar Cohen
+            </p>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+            </nav>
+        </header>
+        <section class="welcome-section">
+            <div class="welcome-contact">
+                <h1 style="font-size: 65px; margin: 0;">Welcome.</h1>
+                <h3 style="font-size: 25px; margin: 0;">My name is Shachar Cohen, <br>and I am a Software Engineer Graduate.</h3>
+                <div class="contact-row">
+                    <img src="images/call.webp" alt="linkedin">
+                    052-3958080
+                </div>
+                <div class="contact-row">
+                    <img src="images/gmail.webp" alt="linkedin">
+                    shacharc4@gmail.com
+                </div>
+                <div class="contact-row">
+                    <img src="images/linkedin.webp" alt="linkedin">
+                    <a href="https://www.linkedin.com/in/shachar-cohen-sw-eng/" target="_blank" style="word-break: break-word;">www.linkedin.com/in/shachar-cohen-sw-eng</a>
+                </div>
+            </div>
+        </section>
+        <section class="about-section">
+            <h3 id="about" style="font-size: 65px; align-self: center;">Introduction</h3>
+            <div class="article">
+                <div class="column">
+                    <div>
+                        <p class="paragraph-title">The Very Beginning</p>
+                        <p class="paragraph">
+                            In high school, I wasn’t sure what truly interested me, but almost by chance, I chose computer science. At first, I didn’t fully understand what I was doing, but at some point, everything started to click. I discovered the beauty of writing code and the satisfaction of making something work. My passion grew during the QA course in the IDF, where I felt confident in the programming lessons and was fascinated by automation. Seeing how every element has its own place and behavior excited me, and I started to appreciate the meticulous organization behind web development.
+                        </p>
+                    </div>
+                    <div>
+                        <div style="display: flex; align-items: center; justify-content: space-between; gap: 20px;">
+                            <p class="paragraph-title">First Experience in High-Tech</p>
+                            <img src="images/biosense2.png" alt="biosense" style="height: 50px; width: 175px;">
+                        </div>
+                        <p class="paragraph">
+                            My experience as a QA engineer in the army helped me transition smoothly into the civilian workforce at Biosense Webster. There, I had the incredible opportunity to be part of a real-world software team. I learned how to collaborate effectively within my team and across different teams, working closely with other QA engineers, developers, and system engineers. I discovered that I was not only good at my job but also at building strong, professional, and friendly relationships. Even during my studies, I kept in touch with the team and returned during summer breaks to continue contributing.
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="separator"></div>
+                <div class="column">
+                    <div>
+                        <div style="display: flex; align-items: center; justify-content: space-between;">
+                            <p class="paragraph-title">Ben-Gurion University</p>
+                            <img src="images/bgu.png" alt="biosense" style="height: 50px; width: 170px;">
+                        </div>
+                        <p class="paragraph">
+                            And then came the main event—pursuing my BSc in Software Engineering at Ben-Gurion University. The studies were intense, pushing my logical thinking to new heights, but I’m proud of myself for successfully navigating the challenges. Now, in my final semester with only three courses left, I’m fully prepared to take the next step in my career.
+                        </p>
+                    </div>
+                    <div>
+                        <p class="paragraph-title">My Calling – Frontend Development</p>
+                        <p class="paragraph">
+                            Throughout my academic journey, I found myself consistently drawn to frontend development. There’s something incredibly rewarding about visually representing data on a website and designing an intuitive, aesthetically pleasing user interface. I have a strong sense of design and a deep appreciation for visual appeal. Combined with the technical knowledge I’ve gained, I believe my true calling is to be a frontend developer, where I can bring ideas to life and create seamless digital experiences.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3 id="skills" style="font-size: 45px;">My Skills</h3>
+            <div class="logo-container">
+                <img src="images/js.jpg" alt="js">
+                <img src="images/css.png" alt="css">
+                <img src="images/html.png" alt="html">
+                <img src="images/react.png" alt="react">
+                <img src="images/git.png" alt="git">
+            </div>
+        </section>
+        <section>
+            <h3 id="projects">My Projects</h3>
+            <iframe></iframe>
+        </section>
+        <script>
+            document.getElementById("my_name").onclick = function(){
+                window.scrollTo({
+                    top:0
+                })
+            }
+        </script>
+    </body>
+</html>
