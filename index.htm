@@ -40,41 +40,29 @@
         <section class="about-section">
             <h3 id="about" style="font-size: 65px; align-self: center;">Introduction</h3>
             <div class="article">
-                <div class="column">
-                    <div>
-                        <p class="paragraph-title">The Very Beginning</p>
-                        <p class="paragraph">
-                            In high school, I wasn’t sure what truly interested me, but almost by chance, I chose computer science. At first, I didn’t fully understand what I was doing, but at some point, everything started to click. I discovered the beauty of writing code and the satisfaction of making something work. My passion grew during the QA course in the IDF, where I felt confident in the programming lessons and was fascinated by automation. Seeing how every element has its own place and behavior excited me, and I started to appreciate the meticulous organization behind web development.
-                        </p>
+                <div class="page-background">
+                    <div id="page1" class="page active">
+                        <p class="paragraph-title">The Very Beginning</p>                            
+                        In high school, I wasn’t sure what truly interested me, but almost by chance, I chose computer science. At first, I didn’t fully understand what I was doing, but at some point, everything started to click. I discovered the beauty of writing code and the satisfaction of making something work. My passion grew during the QA course in the IDF, where I felt confident in the programming lessons and was fascinated by automation. Seeing how every element has its own place and behavior excited me, and I started to appreciate the meticulous organization behind web development.
                     </div>
-                    <div>
-                        <div style="display: flex; align-items: center; justify-content: space-between; gap: 20px;">
-                            <p class="paragraph-title">First Experience in High-Tech</p>
-                            <img src="images/biosense2.png" alt="biosense" style="height: 50px; width: 175px;">
-                        </div>
-                        <p class="paragraph">
-                            My experience as a QA engineer in the army helped me transition smoothly into the civilian workforce at Biosense Webster. There, I had the incredible opportunity to be part of a real-world software team. I learned how to collaborate effectively within my team and across different teams, working closely with other QA engineers, developers, and system engineers. I discovered that I was not only good at my job but also at building strong, professional, and friendly relationships. Even during my studies, I kept in touch with the team and returned during summer breaks to continue contributing.
-                        </p>
-                        
+                    <div id="page2" class="page">   
+                        <p class="paragraph-title">First Experience in High-Tech</p>                         
+                        My experience as a QA engineer in the army helped me transition smoothly into the civilian workforce at Biosense Webster. There, I had the incredible opportunity to be part of a real-world software team. I learned how to collaborate effectively within my team and across different teams, working closely with other QA engineers, developers, and system engineers. I discovered that I was not only good at my job but also at building strong, professional, and friendly relationships. Even during my studies, I kept in touch with the team and returned during summer breaks to continue contributing.
+                        <img src="images/biosense2.png" alt="biosense" style="height: 60px; width: 220px;" class="company-logo">
+                    </div>
+                    <div id="page3" class="page">                            
+                        And then came the main event—pursuing my BSc in Software Engineering at Ben-Gurion University. The studies were intense, pushing my logical thinking to new heights, but I’m proud of myself for successfully navigating the challenges. Now, in my final semester with only three courses left, I’m fully prepared to take the next step in my career.
+                        <img src="images/bgu.png" alt="biosense" style="height: 60px; width: 220px;" class="company-logo">
+                    </div>
+                    <div id="page4" class="page">                            
+                        Throughout my academic journey, I found myself consistently drawn to frontend development. There’s something incredibly rewarding about visually representing data on a website and designing an intuitive, aesthetically pleasing user interface. I have a strong sense of design and a deep appreciation for visual appeal. Combined with the technical knowledge I’ve gained, I believe my true calling is to be a frontend developer, where I can bring ideas to life and create seamless digital experiences.
                     </div>
                 </div>
-                <div class="separator"></div>
-                <div class="column">
-                    <div>
-                        <div style="display: flex; align-items: center; justify-content: space-between;">
-                            <p class="paragraph-title">Ben-Gurion University</p>
-                            <img src="images/bgu.png" alt="biosense" style="height: 50px; width: 170px;">
-                        </div>
-                        <p class="paragraph">
-                            And then came the main event—pursuing my BSc in Software Engineering at Ben-Gurion University. The studies were intense, pushing my logical thinking to new heights, but I’m proud of myself for successfully navigating the challenges. Now, in my final semester with only three courses left, I’m fully prepared to take the next step in my career.
-                        </p>
-                    </div>
-                    <div>
-                        <p class="paragraph-title">My Calling – Frontend Development</p>
-                        <p class="paragraph">
-                            Throughout my academic journey, I found myself consistently drawn to frontend development. There’s something incredibly rewarding about visually representing data on a website and designing an intuitive, aesthetically pleasing user interface. I have a strong sense of design and a deep appreciation for visual appeal. Combined with the technical knowledge I’ve gained, I believe my true calling is to be a frontend developer, where I can bring ideas to life and create seamless digital experiences.
-                        </p>
-                    </div>
+                <div class="page-dots">
+                    <span class="dot active" onclick="goToPage(1)"></span>
+                    <span class="dot" onclick="goToPage(2)"></span>
+                    <span class="dot" onclick="goToPage(3)"></span>
+                    <span class="dot" onclick="goToPage(4)"></span>
                 </div>
             </div>
         </section>
@@ -93,6 +81,19 @@
             <iframe></iframe>
         </section>
         <script>
+            let currentPageNumber = 1;
+            function goToPage(pageNumber){
+                document.querySelectorAll('.page').forEach(page => {
+                    page.classList.remove('active')
+                });
+                document.getElementById('page'+pageNumber).classList.add('active');
+                document.querySelectorAll('.dot').forEach((dot, index) => {
+                    dot.classList.remove('active');
+                    if(index === pageNumber - 1){
+                        dot.classList.add('active');
+                    }
+                })
+            }
             document.getElementById("my_name").onclick = function(){
                 window.scrollTo({
                     top:0
