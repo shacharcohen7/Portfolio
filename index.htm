@@ -5,11 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Shachar Cohen</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="icon" href="images/favicon.ico">
     </head>
     <body>
         <header> 
-            <p id="my_name" class="header-content">
+            <p id="my_name" class="name">
                 <img src="images/favicon.ico" style="height: 30px; width: 30px;">
                 Shachar Cohen
             </p>
@@ -19,68 +23,98 @@
                 <a href="#projects">Projects</a>
             </nav>
         </header>
-        <section class="welcome-section">
-            <div class="welcome-contact">
-                <h1 style="font-size: 65px; margin: 0;">Welcome.</h1>
-                <h3 style="font-size: 25px; margin: 0;">My name is Shachar Cohen, <br>and I am a Software Engineer Graduate.</h3>
-                <div class="contact-row">
+        <section class="welcome">
+            <div>
+                <p>Hi, My Name Is</p>
+                <h1>Shachar</h1>
+                <p>And I am a Software Engineer.</p>
+            </div>
+            <div class="separator"></div>
+            <div class="contact">
+                <div class="row">
                     <img src="images/call.webp" alt="linkedin">
                     052-3958080
                 </div>
-                <div class="contact-row">
+                <div class="row">
                     <img src="images/gmail.webp" alt="linkedin">
                     shacharc4@gmail.com
                 </div>
-                <div class="contact-row">
+                <div class="row">
                     <img src="images/linkedin.webp" alt="linkedin">
-                    <a href="https://www.linkedin.com/in/shachar-cohen-sw-eng/" target="_blank" style="word-break: break-word;">www.linkedin.com/in/shachar-cohen-sw-eng</a>
+                    <a href="https://www.linkedin.com/in/shachar-cohen-sw-eng/" target="_blank" style="word-break: break-word;">
+                        www.linkedin.com/in/shachar-cohen-sw-eng
+                    </a>
                 </div>
             </div>
         </section>
-        <section class="about-section">
-            <h3 id="about" style="font-size: 65px; align-self: center;">Introduction</h3>
-            <div class="article">
-                <div class="page-background">
-                    <div id="page1" class="page active">
-                        <p class="paragraph-title">The Very Beginning</p>                            
-                        In high school, I wasn’t sure what truly interested me, but almost by chance, I chose computer science. At first, I didn’t fully understand what I was doing, but at some point, everything started to click. I discovered the beauty of writing code and the satisfaction of making something work. My passion grew during the QA course in the IDF, where I felt confident in the programming lessons and was fascinated by automation. Seeing how every element has its own place and behavior excited me, and I started to appreciate the meticulous organization behind web development.
+        <section id="about" class="about">
+            <h1 data-aos="fade-up">Introduction</h1>
+            <div style="display: flex;">
+                <div class="arrow">
+                    <span><</span>
+                </div>
+                <div class="article">
+                    <div class="page-container" data-aos="fade-up">
+                        <div id="page1" class="page active">
+                            <div class="title">The Very Beginning</div>                            
+                            <p>
+                                In high school, I wasn’t sure what truly interested me, but almost by chance I chose computer science. At first I didn’t fully understand what I was doing, but at some point everything started to click. I discovered the beauty of writing code and the satisfaction of making something work. My passion grew during the QA course in the IDF, where I felt confident in the programming lessons and was fascinated by automation. Seeing how every element has its own place and behavior excited me, and I started to appreciate the meticulous organization behind web development.
+                            </p>
+                        </div>
+                        <div id="page2" class="page">   
+                            <div class="title">First Experience in High-Tech</div>   
+                            <p>                      
+                                My experience as a QA engineer in the army helped me transition smoothly into the civilian workforce at Biosense Webster. There, I had the incredible opportunity to be part of a real-world software team. I learned how to collaborate effectively within my team and across different teams, working closely with other QA engineers, developers, and system engineers. I discovered that I was not only good at my job but also at building strong, professional, and friendly relationships. Even during my studies, I kept in touch with the team and returned during summer breaks to continue contributing.
+                            </p>
+                            <img src="images/biosense2.png" alt="biosense" class="logo">
+                        </div>
+                        <div id="page3" class="page">   
+                            <div class="title">Ben Gurion University</div>   
+                            <p>                      
+                                And then came the main event—pursuing my BSc in Software Engineering at Ben-Gurion University. The studies were challenging, but they pushed my logical thinking to new heights. Along the way, I had the opportunity to work on practical projects that allowed me to gain valuable experience in teamwork and experiment with various programming languages. I’m incredibly proud of how far I’ve come, and now, in my final semester with only three courses left, I’m excited and fully prepared to take the next step in my career.<br>
+                            </p>
+                            <img src="images/bgu.png" alt="biosense" style="width: 210px;" class="logo">
+                        </div>
+                        <div id="page4" class="page">     
+                            <div class="title">My Calling - Frontend Developer</div>   
+                            <p>                      
+                                Throughout my academic journey, I found myself consistently drawn to frontend development. There’s something incredibly rewarding about visually representing data on a website and designing an intuitive, aesthetically pleasing user interface. I have a strong sense of design and a deep appreciation for visual appeal. Combined with the technical knowledge I’ve gained, I believe my true calling is to be a frontend developer, where I can bring ideas to life and create seamless digital experiences.
+                            </p>
+                        </div>
                     </div>
-                    <div id="page2" class="page">   
-                        <p class="paragraph-title">First Experience in High-Tech</p>                         
-                        My experience as a QA engineer in the army helped me transition smoothly into the civilian workforce at Biosense Webster. There, I had the incredible opportunity to be part of a real-world software team. I learned how to collaborate effectively within my team and across different teams, working closely with other QA engineers, developers, and system engineers. I discovered that I was not only good at my job but also at building strong, professional, and friendly relationships. Even during my studies, I kept in touch with the team and returned during summer breaks to continue contributing.
-                        <img src="images/biosense2.png" alt="biosense" style="height: 60px; width: 220px;" class="company-logo">
-                    </div>
-                    <div id="page3" class="page">                            
-                        And then came the main event—pursuing my BSc in Software Engineering at Ben-Gurion University. The studies were intense, pushing my logical thinking to new heights, but I’m proud of myself for successfully navigating the challenges. Now, in my final semester with only three courses left, I’m fully prepared to take the next step in my career.
-                        <img src="images/bgu.png" alt="biosense" style="height: 60px; width: 220px;" class="company-logo">
-                    </div>
-                    <div id="page4" class="page">                            
-                        Throughout my academic journey, I found myself consistently drawn to frontend development. There’s something incredibly rewarding about visually representing data on a website and designing an intuitive, aesthetically pleasing user interface. I have a strong sense of design and a deep appreciation for visual appeal. Combined with the technical knowledge I’ve gained, I believe my true calling is to be a frontend developer, where I can bring ideas to life and create seamless digital experiences.
+                    <div class="page-dots">
+                        <span class="dot active" onclick="goToPage(1)"></span>
+                        <span class="dot" onclick="goToPage(2)"></span>
+                        <span class="dot" onclick="goToPage(3)"></span>
+                        <span class="dot" onclick="goToPage(4)"></span>
                     </div>
                 </div>
-                <div class="page-dots">
-                    <span class="dot active" onclick="goToPage(1)"></span>
-                    <span class="dot" onclick="goToPage(2)"></span>
-                    <span class="dot" onclick="goToPage(3)"></span>
-                    <span class="dot" onclick="goToPage(4)"></span>
+                <div class="arrow">
+                    <span>></span>
                 </div>
             </div>
         </section>
-        <section>
-            <h3 id="skills" style="font-size: 45px;">My Skills</h3>
-            <div class="logo-container">
-                <img src="images/js.jpg" alt="js">
-                <img src="images/css.png" alt="css">
-                <img src="images/html.png" alt="html">
-                <img src="images/react.png" alt="react">
-                <img src="images/git.png" alt="git">
+        <section id="skills" class="skills">
+            <h1 data-aos="fade-up">My Skills</h1>
+            <div class="content" data-aos="fade-up">
+                <div class="logo-container">
+                    <img src="images/js2.png" alt="js">
+                    <img src="images/css2.png" alt="css">
+                    <img src="images/html2.png" alt="html">
+                </div><br>
+                <div class="logo-container">
+                    <img src="images/react.png" alt="react">
+                    <img src="images/git.png" alt="git">
+                </div>
             </div>
         </section>
         <section>
             <h3 id="projects">My Projects</h3>
             <iframe></iframe>
         </section>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
+            AOS.init();
             let currentPageNumber = 1;
             function goToPage(pageNumber){
                 document.querySelectorAll('.page').forEach(page => {
