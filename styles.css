@@ -50,7 +50,7 @@ section{
 /* Welcome */
 section.welcome{
     justify-content: center; 
-    gap: 70px;
+    gap: 50px;
     background: linear-gradient(to bottom, rgba(255,255,255,0) 50%, #ffffff 100%), url("images/solid.jpg");
     background-size: cover;
 }
