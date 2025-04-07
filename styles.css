@@ -1,44 +1,4 @@
 @media screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 20px;
-    }
-
-    header .name {
-        margin-left: 0;
-        margin-bottom: 10px;
-    }
-
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-        margin-right: 0;
-    }
-
-    section {
-        padding-inline: 5%;
-    }
-
-    .welcome p {
-        font-size: 24px;
-    }
-
-    .welcome h1 {
-        font-size: 50px;
-    }
-
-    .logo-container {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .logo-container img {
-        width: 100px;
-        height: 100px;
-    }
-
     .page-container {
         min-width: unset;
         width: 100%;
@@ -113,14 +73,17 @@ section.welcome{
 }
 .welcome p{
     font-size: 40px; 
+    line-height: 1.6;
     font-weight: 400;
     margin: 0%;
+    letter-spacing: 0.5px;
 }
-.welcome h1{
-    color: rgba(93, 63, 211, 0.9);
-    font-size: 80px; 
-    font-weight: 800;
-    margin: 0%;
+.welcome span{
+    /* color: rgba(93, 63, 211, 0.8); */
+    font-size: 50px; 
+    margin-left: 10px;
+    font-weight: 700;
+    text-shadow: 2px 2px 6px rgba(93, 63, 211, 0.4);
 }
 .welcome .separator{
     height: 0.5px;
@@ -141,7 +104,7 @@ section.welcome{
 .contact .row img{
     height: 30px; 
     width: 30px; 
-    filter: grayscale(100%);
+    filter: grayscale(50%);
     opacity: 0.8;
 }
 .contact .row a{
