@@ -1,18 +1,22 @@
 @media screen and (max-width: 768px) {
-    .page-container {
-        min-width: unset;
-        width: 100%;
-        padding: 20px;
+    header .name{
+        margin-left: 0;
     }
-
+    nav {
+        margin-right: 0;
+    }
+    section.about{
+        padding: 0;
+    }
+    section.skills{
+        padding: 10px;
+    }
+    .page-container {
+        padding: 0;
+    }
     .page .logo {
         width: 150px;
         height: auto;
-    }
-
-    .skills .content {
-        height: auto;
-        padding: 20px 0;
     }
 }
 html {
@@ -73,7 +77,7 @@ section.welcome{
 }
 .welcome p{
     font-size: 40px; 
-    line-height: 1.6;
+    line-height: 2;
     font-weight: 400;
     margin: 0%;
     letter-spacing: 0.5px;
@@ -169,7 +173,6 @@ section.about{
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     min-height: 47vh;
-    min-width: 400px;
     width: 90%;
     align-self: center;
     background-color: rgba(255, 255, 255, 0.1);
@@ -229,7 +232,8 @@ section.skills{
     font-size: 45px; 
 }
 .skills .content{
-    height: 65vh;
+    /* height: 65vh; */
+    padding: 30px;
     background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)),url("images/square.avif");
     background-size: cover;
     display: flex;
@@ -242,15 +246,14 @@ section.skills{
     gap: 50px;
     align-items: center;
     padding: 10px;
+    flex-wrap: wrap;
+    
 }
 .logo-container img {
     width: 150px;
     height: 150px;
     object-fit: contain;
-}
-.logo-container img:hover {
-    animation: dance 0.7s ease-in-out infinite;
-    cursor: pointer;
+    animation: dance 1.5s ease-in-out infinite;
 }
 
 @keyframes dance{
