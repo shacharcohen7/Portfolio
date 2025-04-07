@@ -132,22 +132,31 @@
                     }
                 })
                 currentPageNumber = pageNumber;
+                updateArrows();
             }
             function goRight(){
-                document.getElementById('left').classList.remove('disabled');
                 currentPageNumber++;
-                if(currentPageNumber==4){
-                    document.getElementById('right').classList.add('disabled');
-                }
                 goToPage(currentPageNumber);
+                updateArrows();
             }
             function goLeft(){
-                document.getElementById('right').classList.remove('disabled');
                 currentPageNumber--;
+                goToPage(currentPageNumber);
+                updateArrows();
+            }
+            function updateArrows(){
                 if(currentPageNumber==1){
                     document.getElementById('left').classList.add('disabled');
                 }
-                goToPage(currentPageNumber);
+                else{
+                    document.getElementById('left').classList.remove('disabled');
+                }
+                if(currentPageNumber==4){
+                    document.getElementById('right').classList.add('disabled');
+                }
+                else{
+                    document.getElementById('right').classList.remove('disabled');
+                }
             }
             document.getElementById("my_name").onclick = function(){
                 window.scrollTo({
