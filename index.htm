@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     </head>
     <body>
         <header> 
@@ -56,9 +57,9 @@
         <section id="about" class="about">
             <h1 data-aos="fade-up">Introduction</h1>
             <div style="display: flex;">
-                <!-- <div class="arrow">
-                    <span><</span>
-                </div> -->
+                <div id="left" class="arrow disabled">
+                    <button onclick="goLeft()"><i class="fas fa-chevron-left"></i></button>
+                </div>
                 <div class="article">
                     <div class="page-container" data-aos="fade-up">
                         <div id="page1" class="page active">
@@ -95,9 +96,9 @@
                         <span class="dot" onclick="goToPage(4)"></span>
                     </div>
                 </div>
-                <!-- <div class="arrow">
-                    <span>></span>
-                </div> -->
+                <div id="right" class="arrow">
+                    <button onclick="goRight()"><i class="fas fa-chevron-right"></i></button>
+                </div>
             </div>
         </section>
         <section id="skills" class="skills">
@@ -133,6 +134,23 @@
                         dot.classList.add('active');
                     }
                 })
+                currentPageNumber = pageNumber;
+            }
+            function goRight(){
+                document.getElementById('left').classList.remove('disabled');
+                currentPageNumber++;
+                if(currentPageNumber==4){
+                    document.getElementById('right').classList.add('disabled');
+                }
+                goToPage(currentPageNumber);
+            }
+            function goLeft(){
+                document.getElementById('right').classList.remove('disabled');
+                currentPageNumber--;
+                if(currentPageNumber==1){
+                    document.getElementById('left').classList.add('disabled');
+                }
+                goToPage(currentPageNumber);
             }
             document.getElementById("my_name").onclick = function(){
                 window.scrollTo({
