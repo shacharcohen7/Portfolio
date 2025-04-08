@@ -49,7 +49,7 @@ section{
 
 /* Welcome */
 section.welcome{
-    justify-content: center; 
+    justify-content: center;
     gap: 70px;
     background: linear-gradient(to bottom, rgba(255,255,255,0) 50%, #ffffff 100%), url("images/solid.jpg");
     background-size: cover;
@@ -62,6 +62,7 @@ section.welcome{
     letter-spacing: 0.5px;
 }
 .welcome h1{
+    margin-bottom: 10px;
     /* color: rgba(93, 63, 211, 0.8); */
     font-size: 50px; 
     font-weight: 700;
@@ -102,6 +103,7 @@ section.about{
                 linear-gradient(to right, rgba(255,255,255,0) 90%, #ffffff 100%), 
                 url("images/paper.avif");
     background-size: cover;
+    align-items: center;
 }
 .about h1{
     font-size: 45px;
@@ -139,7 +141,6 @@ section.about{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: 'Times New Roman', Times, serif;
 }
 .paragraph-title{
     font-size: 18px; 
@@ -150,30 +151,36 @@ section.about{
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     min-height: 47vh;
-    width: 90%;
+    min-width: 500px;
     align-self: center;
     background-color: rgba(255, 255, 255, 0.1);
     padding: 30px;
-    padding-bottom: 60px;
+    padding-bottom: 70px;
     position: relative;
 }
 .page {
     display: none;
-    font-size: 20px;
-    line-height: 1.8;
+    font-size: 18px;
+    line-height: 2;
 }
 .page.active {
     display: block;
 }
 .page .title{
-    font-size: 18px; 
-    width: 70%;
     text-decoration: underline;
 }
 .page .logo{
     position: absolute;
     bottom: 20px;
     right: 20px;
+    height: 60px; 
+    width: 220px;
+}
+.logo.bgu{
+    height: 60px; 
+    width: 200px;
+}
+.logo.biosense{
     height: 60px; 
     width: 220px;
 }
@@ -285,7 +292,7 @@ section.skills{
     }
     section.about{
         padding: 0;
-        margin-top: 80px;
+        justify-content: center;
     }
     .about h1{
         font-size: 35px;
@@ -298,16 +305,22 @@ section.skills{
         transition: all 0.3s ease;
         box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     }
-    .page {
-        font-size: 18px;
+    .page-container{
+        min-width: auto;
     }
-    .page .logo {
-        height: 41px; 
-        width: 150px;
+    .page {
+        font-size: 14px;
+    }
+    .logo.bgu{
+        height: 50px; 
+    }
+    .logo.biosense{
+        height: 50px; 
+        width: 180px;
     }
     section.skills{
         padding: 10px;
-        margin-top: 80px;
+        justify-content: center;
     }
     .skills h1{
         font-size: 35px; 
