@@ -307,6 +307,8 @@ section.skills{
     }
     .page-container{
         min-width: auto;
+        padding: 15px;
+        padding-bottom: 70px;
     }
     .page {
         font-size: 14px;
