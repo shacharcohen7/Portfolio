@@ -145,16 +145,11 @@ section.about{
     flex-direction: column;
     justify-content: center;
 }
-.paragraph-title{
-    font-size: 18px; 
-    width: 70%;
-    text-decoration: underline;
-}
 .page-container{
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     min-height: 30vh;
-    min-width: 500px;
+    max-width: 500px;
     align-self: center;
     background-color: rgba(255, 255, 255, 0.1);
     padding: 30px;
@@ -293,7 +288,7 @@ section.projects{
     border: 1px solid rgba(0,0,0,0.7);
     background-color: rgba(255,255,255,0.7);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     /* flex-wrap: wrap; */
     padding: 10px;
 }
