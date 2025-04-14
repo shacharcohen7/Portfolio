@@ -459,6 +459,7 @@ section.projects{
     }
     section.skills{
         padding: 10px;
+        padding-bottom: 100px;
     }
     .skills h1{
         font-size: 35px; 
