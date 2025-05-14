@@ -301,7 +301,7 @@ section.projects{
     border: 1px solid rgba(0,0,0,0.7);
     background-color: rgba(255,255,255,0.7);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     /* flex-wrap: wrap; */
     padding: 10px;
 }
@@ -313,8 +313,8 @@ section.projects{
     width: 30%;
     /* height: 30%; */
     /* height: 100%; */
-    min-height: 150px;
-    min-width: 150px;
+    /* min-height: 150px; */
+    /* min-width: 150px; */
 }
 
 .desc{
@@ -333,8 +333,14 @@ section.projects{
     align-items: center;
 }
 
+.desc .title a{
+    display: flex;
+    gap: 15px;
+}
+
 .desc .title p{
     text-decoration: underline;
+    color: black;
     align-self: flex-start;
     margin: 0;
     font-size: 24px;
